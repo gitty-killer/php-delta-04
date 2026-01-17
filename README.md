@@ -1,3 +1,19 @@
 # php-delta-04
 
-A tiny php sample about delta.
+A small PHP tool that computes text statistics for delta.
+
+## Goal
+- Provide quick text metrics for delta documents.
+- Report top word frequencies for fast inspection.
+
+## Usage
+php index.php data/sample.txt --top 5
+
+## Output
+- lines: total line count
+- words: total word count
+- chars: total character count
+- top words: most frequent tokens (case-insensitive)
+
+## Notes
+- Only ASCII letters and digits are treated as word characters.
